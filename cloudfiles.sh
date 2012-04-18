@@ -45,7 +45,7 @@ else
       ;;
     GET)
       OBJNAME=`basename "$4"`
-      CODE=`scurl GET "$URL$4" -o "$OBJNAME" -i -v`
+      CODE=`scurl GET "$URL$4" -o "$OBJNAME" -v`
       ;;
     PUT)
       if [ ! -f $5 ]; then
